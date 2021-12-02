@@ -28,4 +28,8 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-##
+## Deployed URL
+
+You can view the GitHub pages deployed application [here](https://andradag.github.io/weather-dashboard/).
+
+## Screenshots

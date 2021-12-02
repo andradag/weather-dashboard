@@ -28,7 +28,7 @@
           <!-- Column for search history -->
           <div class="col-12 col-md-3 bg-white border p-2 mb-3">
             <h2>Search for a city:</h2>
-            <form class="form">
+            <form class="form" id="search-form">
               <input
                 id="city-input"
                 class="form-control col-12 p-2 my-2"
@@ -48,100 +48,12 @@
             <hr />
 
             <!--city searched lists here-->
-            <ul class="col-12 list-group" id="city-list">
-              <li class="list-group-item">Tokio</li>
-              <li class="list-group-item">Athens</li>
-              <li class="list-group-item">Birmingham</li>
-              <li class="list-group-item">Madrid</li>
-              <li class="list-group-item">New York</li>
-            </ul>
+            <ul class="col-12 list-group" id="city-list"></ul>
           </div>
 
           <!-- Column for cards -->
           <div class="col-12 col-md-9 bg-white border p-2 mb-3">
-            <div class="d-flex flex-column">
-              <!-- Current Card -->
-              <div class="card-body bg-white border mb-2">
-                <h2 class="card-title">
-                  London (03/12/2021)
-                  <img src="http://openweathermap.org/img/w/04n.png" />
-                </h2>
-                <p class="card-text">Temp: 62.96 &deg;F</p>
-                <p class="card-text">Wind: 14.97 MPH</p>
-                <p class="card-text">Humidity: 88%</p>
-                <p class="card-text">
-                  UV index: <span class="btn btn-primary">0.47</span>
-                </p>
-              </div>
-
-              <!-- Forecast Cards -->
-              <div class="bg-white border">
-                <h3 class="p-3 text-center">5-Day Forecast:</h3>
-
-                <!-- container for 5 days weather cards -->
-                <div class="m-3 d-flex flex-wrap justify-content-around">
-                  <div class="card m-1 forecast-card">
-                    <div class="card-body">
-                      <h5 class="card-title">03/12/2021</h5>
-                      <p class="card-text">
-                        <img src="http://openweathermap.org/img/w/04n.png" />
-                      </p>
-                      <p class="card-text">Temp: 66.5 &deg;F</p>
-                      <p class="card-text">Wind: 15.5 MPH</p>
-                      <p class="card-text">Humidity: 82%</p>
-                    </div>
-                  </div>
-
-                  <div class="card m-1 forecast-card">
-                    <div class="card-body">
-                      <h5 class="card-title">03/12/2021</h5>
-                      <p class="card-text">
-                        <img src="http://openweathermap.org/img/w/04n.png" />
-                      </p>
-                      <p class="card-text">Temp: 66.5 &deg;F</p>
-                      <p class="card-text">Wind: 15.5 MPH</p>
-                      <p class="card-text">Humidity: 82%</p>
-                    </div>
-                  </div>
-
-                  <div class="card m-1 forecast-card">
-                    <div class="card-body">
-                      <h5 class="card-title">03/12/2021</h5>
-                      <p class="card-text">
-                        <img src="http://openweathermap.org/img/w/04n.png" />
-                      </p>
-                      <p class="card-text">Temp: 66.5 &deg;F</p>
-                      <p class="card-text">Wind: 15.5 MPH</p>
-                      <p class="card-text">Humidity: 82%</p>
-                    </div>
-                  </div>
-
-                  <div class="card m-1 forecast-card">
-                    <div class="card-body">
-                      <h5 class="card-title">03/12/2021</h5>
-                      <p class="card-text">
-                        <img src="http://openweathermap.org/img/w/04n.png" />
-                      </p>
-                      <p class="card-text">Temp: 66.5 &deg;F</p>
-                      <p class="card-text">Wind: 15.5 MPH</p>
-                      <p class="card-text">Humidity: 82%</p>
-                    </div>
-                  </div>
-
-                  <div class="card m-1 forecast-card">
-                    <div class="card-body">
-                      <h5 class="card-title">03/12/2021</h5>
-                      <p class="card-text">
-                        <img src="http://openweathermap.org/img/w/04n.png" />
-                      </p>
-                      <p class="card-text">Temp: 66.5 &deg;F</p>
-                      <p class="card-text">Wind: 15.5 MPH</p>
-                      <p class="card-text">Humidity: 82%</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="d-flex flex-column" id="weather-cards-container"></div>
           </div>
         </div>
       </main>
@@ -156,6 +68,12 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>

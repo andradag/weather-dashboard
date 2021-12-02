@@ -33,3 +33,7 @@ THEN I am again presented with current and future conditions for that city
 You can view the GitHub pages deployed application [here](https://andradag.github.io/weather-dashboard/).
 
 ## Screenshots
+
+<img src="assets/images/screenshot-1.png"/>
+
+<img src="assets/images/screenshot-2.png"/>
